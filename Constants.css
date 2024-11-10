@@ -1,8 +1,16 @@
 .darkmode{
 --background-element1:url(Elements/star\ background1\ white.svg);
 --background-element2:url(Elements/sun\ background2\ white.svg);
+--background-color: #1E1E20;
+--background-invert-color: #EBE8E8;
+--background-items-color: #B0A694;
+
 }
 .lightmode{
 --background-element1:url(Elements/star\ background1\ purple.svg);
 --background-element2:url(Elements/sun\ background2\ purple.svg);
+--background-color: #EBE8E8;
+--background-invert-color: #1E1E20;
+--background-items-color: #7D4DAD;
+
 }
