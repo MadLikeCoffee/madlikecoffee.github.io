@@ -5,7 +5,7 @@
 }
 
 .darkmode{
-    --background-color: black;
-    --color: white;
-    --border: white;
+    --background-color: #435570;
+    --color: #996554;
+    --border: #c49484;
 }
