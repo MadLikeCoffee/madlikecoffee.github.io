@@ -1,11 +1,15 @@
 .lightmode{
-    --background-color:white;
+    --background-color:#FBFBFB;
     --color:black;
-    --border: black;
+    --border: #C4D9FF;
+    --card-bg:#E8F9FF;
+    --text-shadow:transparent;
 }
 
 .darkmode{
     --background-color: #435570;
-    --color: #996554;
+    --color: #d98a71;
     --border: #c49484;
+    --card-bg: #2a3a52;
+    --text-shadow:black;
 }

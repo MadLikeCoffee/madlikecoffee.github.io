@@ -15,9 +15,9 @@ header{
     margin: 0px;
     padding: 10px;
     display: flex;
-    background-color:var(--border);
+    background-color:none;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
 }
 .navbartop li{
     padding: 5px;
@@ -34,7 +34,6 @@ header{
     font-size: 25px;
     padding:8px;
     cursor:pointer;
-    color: white;
 }
 .navbartop li a:not(:hover) , .navbartop li button:not(:hover){
     opacity: 80%;
@@ -43,16 +42,26 @@ header{
 
 .homeintro{
     margin: 15px;
-    margin-top:25%;
     display: flex;
     flex-direction:row;
     align-items: center;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px var(--text-shadow);
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid;
+    border-radius: 15px;;
+    padding:20px;
+    background-color: var(--card-bg);
 }
 .homeintro img{
     width:100%;
     animation: boxsha 3s infinite;
     border-radius: 15px;
+    margin:0px;
+}
+.homeintro .hometext{
+    margin-right: 15px;
 }
 @keyframes boxsha {
     0% {filter: drop-shadow(0 0 8px var(--border));}
@@ -63,5 +72,9 @@ header{
     .homeintro{
         flex-direction: column-reverse;
         text-align: center;
+        max-width: 75%;
+    }
+    .homeintro .hometext{
+        margin-right: 0px;
     }
 }
