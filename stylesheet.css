@@ -1,9 +1,13 @@
+:root{
+    scroll-behavior: smooth;
+}
 body{
     padding:0;
     margin:0;
     background-color:var(--background-color);
     color: var(--color);
     border-color: var(--border);
+    transition: ease-in-out .3s;
 }
 header{
     position:sticky;
@@ -38,6 +42,10 @@ header{
 .navbartop li a:not(:hover) , .navbartop li button:not(:hover){
     opacity: 80%;
 }
+.navbartop li a:hover , .navbartop li button:hover{
+    color: lightgray;
+}
+
 /*Intro photo etc*/
 
 .homeintro{
@@ -76,5 +84,26 @@ header{
     }
     .homeintro .hometext{
         margin-right: 0px;
+    }
+}
+.container{
+    margin: 15px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-shadow: 0 0 5px var(--text-shadow);
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid;
+    border-radius: 15px;;
+    padding:20px;
+    background-color: var(--card-bg);
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 75%;
     }
 }
