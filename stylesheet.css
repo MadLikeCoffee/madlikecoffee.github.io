@@ -24,6 +24,10 @@ header{
     background-color:none;
     flex-wrap: wrap;
     justify-content: center;
+
+    position:sticky;
+    top:0;
+    z-index: 50;
 }
 .navbartop li{
     padding: 5px;
