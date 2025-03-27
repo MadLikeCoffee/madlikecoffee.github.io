@@ -1,0 +1,100 @@
+:root{
+    scroll-behavior: smooth;
+    font-weight: 800;
+
+}
+body{
+    padding:0;
+    margin:0;
+    background-color:var(--background-color);
+    color: var(--color);
+    border-color: var(--border);
+    transition: ease-in-out .3s;
+}
+
+.top-right{
+    color: var(--color);
+    text-decoration: none;
+    font-weight: 800;
+    padding:8px;
+    border:solid 2px;
+    border-radius: 15px;
+    background-color: var(--background-color);
+    font-size: 25px;
+    cursor:pointer;
+    position: sticky;
+    top: 8px;
+    float:right;
+    margin:8px;
+}
+.top-right:hover{
+    transform: scale(1.1);
+    filter: contrast(1.2);
+    transition: ease-in-out .5s;
+}
+
+
+.card{
+    background-color: var(--card-bg);
+    padding: 8px;
+    display: relative;
+    text-align: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border: solid 2px var(--border);
+    border-radius:15px;
+}
+/*Typing effect*/
+.TypingEffect{
+    position: relative;
+    margin-right:8px;
+}
+.TypingEffect::before{
+    content: "Good Food";
+    color:var(--color);
+    animation: words 8s infinite;
+}
+.TypingEffect::after{
+    content:"";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px solid var(--color);
+    background-color: var(--card-bg);
+    right: -8px;
+    animation: cursor .8s infinite, typing 8s steps(14) infinite;
+}
+@keyframes cursor{
+    to {
+        border-left: 2px solid var(--color);
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Good Food";
+    }
+    21%,40%{
+        content: "Good Health";
+    }
+    41%,60%{
+        content: "Good Study";
+    }
+    61%,80%{
+        content: "Good Excercise";
+    }
+    81%,100%{
+        content: "Good Sleep";
+    }
+
+}
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+/*Typing effect*/
