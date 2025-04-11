@@ -32,7 +32,26 @@ body{
     filter: contrast(1.2);
     transition: ease-in-out .5s;
 }
-
+.top-left{
+    color: var(--color);
+    text-decoration: none;
+    font-weight: 800;
+    padding:8px;
+    border:solid 2px;
+    border-radius: 15px;
+    background-color: var(--background-color);
+    font-size: 25px;
+    cursor:pointer;
+    position: sticky;
+    top: 8px;
+    float:left;
+    margin:8px;
+}
+.top-left:hover{
+    transform: scale(1.1);
+    filter: contrast(1.2);
+    transition: ease-in-out .5s;
+}
 
 .card{
     background-color: var(--card-bg);

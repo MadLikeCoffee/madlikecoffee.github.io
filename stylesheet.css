@@ -77,6 +77,17 @@ header{
 .homeintro .hometext{
     margin-right: 15px;
 }
+.homeintro:hover{
+    transform: scale(1.012);
+    filter: contrast(110%);
+    transition: .5s;
+}
+.container:hover{
+    transform: scale(1.012);
+    transform: rotate(-3deg);
+    filter: contrast(110%);
+    transition: .5s;
+}
 @keyframes boxsha {
     0% {filter: drop-shadow(0 0 8px var(--border));}
     50% {filter: drop-shadow(0 0 8px black);}
@@ -125,6 +136,32 @@ header{
     float:right;
     margin:8px;
 }
+.bottom-left{
+    font-size: 25px;
+    color: var(--color);
+    border:solid 2px var(--color);
+    border-radius: 15px;
+    padding: 6px;
+    position: sticky;
+    bottom: 8px;
+    float:left;
+    margin:8px;
+    text-decoration: none;
+}
 .container h2{
     font-family: "Press Start 2P", sans-serif;
+}
+.socials{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+.socials li{
+    display: inline-flex;
+    padding-right: 8px;
+}
+.socials li a{
+    color: var(--color);
+    text-decoration: none;
+    font-size: 40px;
 }
