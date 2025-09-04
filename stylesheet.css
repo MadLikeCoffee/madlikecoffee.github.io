@@ -44,6 +44,8 @@ header{
     font-size: 25px;
     padding:8px;
     cursor:pointer;
+    min-width: 45px;
+    text-align: center;
 }
 .navbartop li a:not(:hover) , .navbartop li button:not(:hover){
     opacity: 80%;
@@ -72,10 +74,13 @@ header{
     width:100%;
     animation: boxsha 3s infinite;
     border-radius: 15px;
-    margin:0px;
+    margin: 3px;
 }
 .homeintro .hometext{
     margin-right: 15px;
+}
+.homeintro .hometext p:first-child{
+    font-size: 33px;
 }
 .homeintro:hover{
     transform: scale(1.012);
@@ -84,7 +89,7 @@ header{
 }
 .container:hover{
     transform: scale(1.012);
-    transform: rotate(-3deg);
+    /*transform: rotate(-3deg);*/
     filter: contrast(110%);
     transition: .5s;
 }
