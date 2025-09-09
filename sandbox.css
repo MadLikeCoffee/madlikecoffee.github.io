@@ -117,3 +117,30 @@ body{
     }
 }
 /*Typing effect*/
+/*Clock*/
+.clock-container{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Photos/matching-icons-coffee-cute-Favim.com-8263768.jpg);
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.clock-container #clock{
+    padding: 8px;
+    font-family: "Matemasie", sans-serif;
+    font-size: 45px;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    filter: drop-shadow(0 0 3px var(--text-shadow));
+    border: 2px solid var(--border);
+    width: 100%;
+
+}
+/*Clock*/
