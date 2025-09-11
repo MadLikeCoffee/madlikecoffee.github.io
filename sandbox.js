@@ -23,6 +23,11 @@ var win = new Audio('Audio/win.wav');
 var lose = new Audio('Audio/lose.wav');
 var tie = new Audio('Audio/tie.wav');
 
+win.volume = 0.25;
+lose.volume = 0.25;
+tie.volume = 0.25;
+
+
 function randomIntFromInterval(min, max) { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
