@@ -22,9 +22,6 @@ const gamestate = document.getElementById("game-state");
 var win = new Audio('Audio/win.wav');
 var lose = new Audio('Audio/lose.wav');
 var tie = new Audio('Audio/tie.wav');
-win.play();
-lose.play();
-tie.play();
 
 function randomIntFromInterval(min, max) { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min);
