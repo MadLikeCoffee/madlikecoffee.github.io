@@ -29,13 +29,13 @@ var win = new Audio('Audio/win.wav');
 var lose = new Audio('Audio/lose.wav');
 var tie = new Audio('Audio/tie.wav');
 
-if(volumedialmemory != null){
+if(volumedialmemory == null){
     volumedialrps.setAttribute("value", 25);
 }
 else {
 volumedialrps.setAttribute("value", volumedialmemory);
 }
-if(volumedialrpschanged != null){
+if(volumedialrpschanged == null){
     win.volume = 0.25;
     lose.volume = 0.25;
     tie.volume = 0.25;
