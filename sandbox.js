@@ -17,15 +17,49 @@ const scissorsbtn = document.getElementById("rps-scissors");
 const playerpick = document.getElementById("player-pick");
 const robotpick = document.getElementById("robot-pick");
 const gamestate = document.getElementById("game-state");
+const volumedialrps = document.getElementById("volumedialrps");
+
+
+let volumedialrpschanged = localStorage.getItem('volume')
+let volumedialmemory = localStorage.getItem('volumememory')
+
 
 
 var win = new Audio('Audio/win.wav');
 var lose = new Audio('Audio/lose.wav');
 var tie = new Audio('Audio/tie.wav');
 
-win.volume = 0.25;
-lose.volume = 0.25;
-tie.volume = 0.25;
+if(volumedialmemory != null){
+    volumedialrps.setAttribute("value", 25);
+}
+else {
+volumedialrps.setAttribute("value", volumedialmemory);
+}
+if(volumedialrpschanged != null){
+    win.volume = 0.25;
+    lose.volume = 0.25;
+    tie.volume = 0.25;
+}
+else {
+    win.volume = volumedialrpschanged;
+    lose.volume = volumedialrpschanged;
+    tie.volume = volumedialrpschanged;
+}
+
+
+volumedialrps.oninput = function() {
+    let volumedialrpschanged = this.value / 100;
+    let volumedialmemory = this.value;
+    //console.log(volumedialrpschanged);
+
+    win.volume = volumedialrpschanged;
+    lose.volume = volumedialrpschanged;
+    tie.volume = volumedialrpschanged;
+    
+    localStorage.setItem('volume', volumedialrpschanged);
+    
+    localStorage.setItem('volumememory', volumedialmemory);
+}
 
 
 function randomIntFromInterval(min, max) { // min and max included 
