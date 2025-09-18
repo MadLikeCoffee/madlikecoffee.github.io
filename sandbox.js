@@ -29,7 +29,7 @@ var win = new Audio('Audio/win.wav');
 var lose = new Audio('Audio/lose.wav');
 var tie = new Audio('Audio/tie.wav');
 
-if(volumedialmemory == null){
+/*if(volumedialmemory == null){
     volumedialrps.setAttribute("value", 25);
 }
 else {
@@ -45,7 +45,18 @@ else {
     lose.volume = volumedialrpschanged;
     tie.volume = volumedialrpschanged;
 }
+*/
+// ??= operator is used if value is null or undefined set value
+    volumedialmemory ??= 25;
+    volumedialrps.setAttribute("value", volumedialmemory);
+    volumedialrpschanged ??= 0.25;
 
+    //console.log(volumedialrpschanged);
+    //console.log(volumedialrps.getAttribute("value"));
+
+    win.volume = volumedialrpschanged;
+    lose.volume = volumedialrpschanged;
+    tie.volume = volumedialrpschanged;
 
 volumedialrps.oninput = function() {
     let volumedialrpschanged = this.value / 100;
