@@ -244,3 +244,67 @@ body{
 }
 
 /*Rock Paper Scissors*/
+
+/*Calculator*/
+.center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#calculator {
+    background: var(--background-color);
+    border-radius: 8px;
+    border:solid 2px var(--border);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 250px;
+}
+#display{
+    background: var(--background-color);
+    border: none;
+    filter: drop-shadow(0px 0px 5px var(--text-shadow));
+    width: 95%;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 25px;
+    color: var(--color);
+    text-shadow: var(--text-shadow);
+}
+#keys{
+    margin: 3px;
+    background: var(--background-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+}
+#calculator button{
+    margin: 3px;
+    
+    background-color: var(--background-color);
+    border-radius: 50px;
+    border: solid 2px var(--border);
+    width: 50px;
+    height: 50px;
+    color: var(--color);
+    filter: drop-shadow(0 0 0 var(--text-shadow));
+
+    text-align: center;
+    text-shadow: 0px 0px 5px var(--text-shadow);
+    font-size: 25px;
+    font-family: "Press Start 2P", sans-serif;
+    cursor: pointer;
+}
+#calculator .operator-btn{
+    background-color: var(--card-bg);
+}
+#calculator button:hover{
+    filter: contrast(1.25);
+}
+#calculator button:active{
+    filter: brightness(1.25);
+}
+/*Calculator*/
