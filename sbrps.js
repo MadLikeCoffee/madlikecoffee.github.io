@@ -7,8 +7,8 @@ const gamestate = document.getElementById("game-state");
 const volumedialrps = document.getElementById("volumedialrps");
 
 
-let volumedialrpschanged = localStorage.getItem('volume')
-let volumedialmemory = localStorage.getItem('volumememory')
+var volumedialrpschanged = localStorage.getItem('volume')
+var volumedialmemory = localStorage.getItem('volumememory')
 
 
 
@@ -46,8 +46,8 @@ else {
     tie.volume = volumedialrpschanged;
 
 volumedialrps.oninput = function() {
-    let volumedialrpschanged = this.value / 100;
-    let volumedialmemory = this.value;
+    volumedialrpschanged = this.value / 100;
+    volumedialmemory = this.value;
     //console.log(volumedialrpschanged);
 
     win.volume = volumedialrpschanged;
@@ -106,6 +106,7 @@ function decider(randomas, pasirinkimas){
 }
 
 paperbtn.addEventListener("click", () => {
+    
   playerpick.classList.remove("fa-hand-fist");
   playerpick.classList.remove("fa-hand-scissors");
   playerpick.classList.add("fa-hand");
