@@ -329,3 +329,57 @@ body{
     filter: brightness(1.25);
 }
 /*Secret button :)*/
+
+/*Comments section*/
+.comment-container{
+    border: solid 2px var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.comment-container .comment{
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 18px;
+}
+.comment-container .btn{
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    border: solid 2px var(--border);
+    background-color: var(--card-bg);
+    color: var(--color);
+    width: max-content;
+    margin-left: auto;
+}
+.comment-container .btn:hover{
+    filter: contrast(1.25);
+}
+.comment-container .btn:active{
+    filter:brightness(1.25)
+}
+.comment-container .comment-reply{
+    display: flex;
+    flex-direction: column;
+}
+.comment-container .comment-reply textarea{
+    padding: 8px;
+    margin: 8px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    border: solid 2px var(--border);
+    min-height: 50px;
+    color: var(--color);
+    resize: vertical;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.hidden{
+    display: none !important;
+}
+
+/*Comments section*/
