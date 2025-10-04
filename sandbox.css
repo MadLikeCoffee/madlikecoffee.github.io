@@ -383,3 +383,49 @@ body{
 }
 
 /*Comments section*/
+
+/*Waifu API*/
+.waifucontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.waifucontainer .bubbleicon img{
+    width:100%;
+    border-radius: 15px;
+    border: solid 2px var(--border);
+}
+
+.waifucontainer .radios{
+    color: var(--color);
+}
+.waifucontainer .sleections select{
+    background-color: var(--background-color);
+    border: var(--border) 2px solid;
+    height: 50px;
+    color: var(--color);
+    width: 100%;
+    text-align: center;
+    font-family: "Matemasie", sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.waifucontainer .sleections select:hover{
+    filter: contrast(1.25);
+}
+
+
+.waifucontainer #generatemywaifu{
+    background-color: var(--background-color);
+    border: var(--border) solid 2px;
+    font-family: "Matemasie", sans-serif;
+    font-size: 25px;
+    color: var(--color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.waifucontainer #generatemywaifu:hover{
+    filter: contrast(1.25);
+}
+/*Waifu API*/
