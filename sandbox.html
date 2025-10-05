@@ -101,12 +101,6 @@
         <div class="bubbleicon">
             <img src="">
         </div>
-        <div class="radios">
-            <input class="hidden" type="radio" name="radiobutton" id="SFW" value="SFW" checked>
-            <label class="hidden" for="SFW">SFW</label>
-            <input class="hidden" type="radio" name="radiobutton" id="NSFW" value="NSFW">
-            <label class="hidden" for="NSFW">NSFW</label>
-        </div>
         <div class="sleections">
             <select name="category" id="waifucategories">
                 <option value="waifu">waifu</option>
@@ -145,7 +139,29 @@
         <button type="button" id="generatemywaifu">Generate</button>
     </div>
 </div>
-
+<div class="card">
+    <div class="musicplayer">
+        <div class="volumebar">
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" value="0" id="musicvolume">
+        </div>
+        
+        <img src="Icons/md.webp">
+        <div class="description">
+            <h2>LOUD by Aylex</h2>
+            <a href="https://freetouse.com/music">Music for Video (Free Download)</a>
+        </div>
+        <audio id="song">
+            <source src="Music/Aylex - LOUD (freetouse.com).mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </div>
+</div>
 
 
 <script src="sbclock.js"></script>
@@ -154,6 +170,7 @@
 <script src="secretbutton.js"></script>
 <script src="comments.js"></script>
 <script src="waifuAPI.js"></script>
+<script src="musicplayer.js"></script>
 <!--<script src="sandbox.js"></script>-->
 <script src="javascript.js"></script>
 </body>

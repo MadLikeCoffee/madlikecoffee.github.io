@@ -433,3 +433,110 @@ body{
     filter: contrast(1.25);
 }
 /*Waifu API*/
+/*Music player*/
+.musicplayer{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: var(--border) 2px solid;
+
+}
+.musicplayer img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 15px;
+}
+.musicplayer .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.musicplayer h2{
+    font-family: "Matemasie", sans-serif;
+    color: var(--color);
+    text-align: center;
+    margin-bottom: 8px;
+}
+.musicplayer a{
+    font-family: "Matemasie", sans-serif;
+    text-decoration: none;
+    color: var(--color);
+    margin-bottom: 8px;
+    text-align: center;
+}
+.musicplayer #progress{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 8px;
+    background-color: var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px;
+}
+.musicplayer #progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: var(--card-bg);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: var(--color) 6px solid;
+    box-shadow: 0 0px 5px var(--card-bg);
+}
+.musicplayer .controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.musicplayer .controls div{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 3px solid var(--border);
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    cursor: pointer;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.musicplayer .controls div:nth-child(2){
+    padding: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    transform: scale(1.25);
+}
+
+.musicplayer .volumebar{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.musicplayer .volumebar i{
+    padding: 8px;
+}
+.musicplayer .volumebar #musicvolume{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 8px;
+    background-color: var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.musicplayer .volumebar #musicvolume::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: var(--card-bg);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: var(--color) 3px solid;
+    box-shadow: 0 0px 5px var(--card-bg);
+}
+/*Music player*/
