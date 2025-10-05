@@ -123,7 +123,7 @@ paperbtn.addEventListener("click", () => {
     disabled = true;
     setTimeout(() => {
       disabled = false;
-      console.log("timedout");
+      //console.log("timedout");
     }, 1000);
   }
 });
@@ -139,7 +139,7 @@ rockbtn.addEventListener("click", () => {
     disabled = true;
     setTimeout(() => {
       disabled = false;
-      console.log("timedout");
+      //console.log("timedout");
     }, 1000);
   }
 });
@@ -155,7 +155,7 @@ scissorsbtn.addEventListener("click", () => {
     disabled = true;
     setTimeout(() => {
       disabled = false;
-      console.log("timedout");
+      //console.log("timedout");
     }, 1000);
   }
 });

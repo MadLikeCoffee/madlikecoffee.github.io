@@ -38,12 +38,12 @@ function playPause(){
     }
 }
 
-if(song.play()){
+if(song.play){
     setInterval(()=>{
         progress.value = song.currentTime;
     }, 500)
 }
-else{}
+
 progress.onchange = function(){
     song.play();
     song.currentTime = progress.value;
